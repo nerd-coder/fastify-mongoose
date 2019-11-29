@@ -12,11 +12,11 @@
   "license": "MIT",
   "dependencies": {
     "fastify-plugin": "^1.6.0",
-    "mongoose": "^5.5.14"
+    "mongoose": "^5.7.6"
   },
   "devDependencies": {
-    "fastify": "^2.4.1",
-    "release-it": "*",
-    "tap": "^14.2.2"
+    "fastify": "^2.10.0",
+    "release-it": "^12.4.3",
+    "tap": "^14.8.0"
   }
 }
