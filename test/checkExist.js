@@ -5,7 +5,7 @@ const fastifyMongoose = require('../src')
 
 tap.test(
   'fastify.mongoose should exist',
-  /** @param {typeof tap} t */
+  /** @param {tap} t */
   async function(t) {
     t.plan(7)
 
@@ -84,7 +84,11 @@ tap.test(
       const { statusCode, payload } = await app.inject({
         method: 'POST',
         url: '/',
-        payload: { username: 'test', password: 'pass', email: 'test@example.com' },
+        payload: {
+          username: 'test',
+          password: 'pass',
+          email: 'test@example.com',
+        },
       })
       const json = JSON.parse(payload)
       const { username, password, email } = json
@@ -93,7 +97,7 @@ tap.test(
       t.strictSame(password, undefined, json)
       t.strictSame(email, 'test@example.com', json)
     } catch (e) {
-      t.fail('Fastify threw', e)
+      t.fail('Fastify threw' + e.message, e)
     }
 
     app.close()
