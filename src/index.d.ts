@@ -1,8 +1,8 @@
-import { FastifyInstance, Plugin } from 'fastify/fastify'
+import { FastifyInstance, Plugin } from 'fastify'
 import { Server, IncomingMessage, ServerResponse } from 'http'
 import { Connection, ConnectionOptions, Schema } from 'mongoose'
 
-declare module 'fastify/fastify' {
+declare module 'fastify' {
   interface FastifyInstance {
     mongoose: Connection
   }
