@@ -8,15 +8,21 @@ declare module 'fastify' {
   }
 }
 
+declare global {
+  namespace NerdCoder {
+    interface PluginOptions {
+      url: string
+      connectionOptions: ConnectionOptions
+      models?: { [key: string]: Schema }
+    }
+  }
+}
+
 declare let fastifyMongoose: Plugin<
   Server,
   IncomingMessage,
   ServerResponse,
-  {
-    url: string
-    connectionOptions: ConnectionOptions
-    models?: { [key: string]: Schema }
-  }
+  PluginOptions
 >
 
 export = fastifyMongoose
