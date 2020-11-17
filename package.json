@@ -1,6 +1,6 @@
 {
   "name": "@nerd-coder/fastify-mongoose",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "A Fastify plugin to connect to a MongoDB instance via the Mongoose ODM",
   "main": "src/index.js",
   "typings": "src/index.d.ts",
