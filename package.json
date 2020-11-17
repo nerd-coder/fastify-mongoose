@@ -6,7 +6,7 @@
   "typings": "src/index.d.ts",
   "scripts": {
     "test": "tap",
-    "release": "release-it"
+    "release": "release-it patch --ci"
   },
   "author": "",
   "license": "MIT",
