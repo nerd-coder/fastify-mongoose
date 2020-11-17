@@ -11,11 +11,11 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "fastify-plugin": "^1.6.1",
-    "mongoose": "^5.9.10"
+    "fastify-plugin": "^3.0.0",
+    "mongoose": "^5.10.15"
   },
   "devDependencies": {
-    "fastify": "^2.14.0",
+    "fastify": "^3.8.0",
     "release-it": "^13.5.7",
     "tap": "^14.10.7"
   }
